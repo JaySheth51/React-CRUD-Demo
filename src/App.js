@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import FileDrop from 'react-file-drop';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   constructor(props) {
@@ -83,7 +84,7 @@ class App extends Component {
         <form ref="myForm" className="myForm">
           <input type="text" ref="name" placeholder="name" className="formField" />
           <input type="text" ref="address" placeholder="address" className="formField" />
-          <button onClick={(e) => this.onSubmit(e)} className="myButton">Submit</button>
+          <button onClick={(e) => this.onSubmit(e)} className="myButton">Insert</button>
         </form>
 
         <pre>
